@@ -3,7 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>com.billrobclark.phpdocsearch</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>6E4EEBD5-0AB8-4986-8EC0-1CD707F41689</key>
@@ -21,34 +23,15 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string></string>
+	<string>Bill Clark</string>
 	<key>description</key>
-	<string></string>
+	<string>A friendly-really-fast PHP.net documentation search</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Open custom URL in specified browser</string>
+	<string>PHP Docs</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string></string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>6E4EEBD5-0AB8-4986-8EC0-1CD707F41689</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -57,38 +40,92 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string></string>
+				<string>{query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
+			<string>6E4EEBD5-0AB8-4986-8EC0-1CD707F41689</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>php</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Searching docs for "{query}"...</string>
+				<key>script</key>
+				<string>php php-search.php "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Search the PHP docs...</string>
+				<key>title</key>
+				<string>PHP</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
 			<string>11D5721D-E45C-4D45-82C8-2CC370002271</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>A friendly-really-fast PHP.net documentation search.
+
+## Usage
+
+php &lt;query&gt;
+php array_unique
+
+Either press `⌘Y` to Quick Look the result, or you can press enter to open it in your default web browser.</string>
 	<key>uidata</key>
 	<dict>
 		<key>11D5721D-E45C-4D45-82C8-2CC370002271</key>
 		<dict>
 			<key>xpos</key>
-			<integer>270</integer>
+			<integer>280</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>10</integer>
 		</dict>
 		<key>6E4EEBD5-0AB8-4986-8EC0-1CD707F41689</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<integer>500</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>10</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>billrclark.com</string>
 </dict>
 </plist>
