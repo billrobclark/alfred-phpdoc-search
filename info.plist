@@ -63,7 +63,7 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
-				<integer>127</integer>
+				<integer>4</integer>
 				<key>keyword</key>
 				<string>php</string>
 				<key>queuedelaycustom</key>
@@ -85,7 +85,7 @@
 				<key>subtext</key>
 				<string>Search the PHP docs...</string>
 				<key>title</key>
-				<string>PHP</string>
+				<string>PHP Docs</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -109,23 +109,30 @@ php array_unique
 
 Either press `⌘Y` to Quick Look the result, or you can press enter to open it in your default web browser.</string>
 	<key>uidata</key>
-	<dict>
-		<key>11D5721D-E45C-4D45-82C8-2CC370002271</key>
 		<dict>
-			<key>xpos</key>
-			<integer>280</integer>
-			<key>ypos</key>
-			<integer>10</integer>
+			<key>6E4EEBD5-0AB8-4986-8EC0-1CD707F41689</key>
+			<dict>
+				<key>xpos</key>
+				<integer>200</integer>
+				<key>ypos</key>
+				<integer>90</integer>
+			</dict>
+			<key>11D5721D-E45C-4D45-82C8-2CC370002271</key>
+			<dict>
+				<key>xpos</key>
+				<integer>510</integer>
+				<key>ypos</key>
+				<integer>90</integer>
+			</dict>
 		</dict>
-		<key>6E4EEBD5-0AB8-4986-8EC0-1CD707F41689</key>
+		<key>variables</key>
 		<dict>
-			<key>xpos</key>
-			<integer>500</integer>
-			<key>ypos</key>
-			<integer>10</integer>
+			<key>branch</key>
+			<string>master</string>
 		</dict>
+		<key>version</key>
+		<string>0.2.2</string>
+		<key>webaddress</key>
+		<string>https://billrclark.com</string>
 	</dict>
-	<key>webaddress</key>
-	<string>billrclark.com</string>
-</dict>
 </plist>
