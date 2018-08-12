@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.billrobclark.phpdocsearch</string>
+	<string>com.billrclark.phpsearch</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -47,7 +47,7 @@
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>6E4EEBD5-0AB8-4986-8EC0-1CD707F41689</string>
+			<string>11D5721D-E45C-4D45-82C8-2CC370002271</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -75,7 +75,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Searching docs for "{query}"...</string>
+				<string>Searching PHP docs for "{query}"...</string>
 				<key>script</key>
 				<string>php php-search.php "{query}"</string>
 				<key>scriptargtype</key>
@@ -83,7 +83,7 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Search the PHP docs...</string>
+				<string>Search the PHP.net docs...</string>
 				<key>title</key>
 				<string>PHP Docs</string>
 				<key>type</key>
@@ -94,13 +94,13 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>11D5721D-E45C-4D45-82C8-2CC370002271</string>
+			<string>6E4EEBD5-0AB8-4986-8EC0-1CD707F41689</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
 	</array>
-	<key>readme</key>
-	<string>A friendly-really-fast PHP.net documentation search.
+		<key>readme</key>
+		<string>A friendly-really-fast PHP.net documentation search.
 
 ## Usage
 
@@ -109,30 +109,30 @@ php array_unique
 
 Either press `⌘Y` to Quick Look the result, or you can press enter to open it in your default web browser.</string>
 	<key>uidata</key>
+	<dict>
+		<key>6E4EEBD5-0AB8-4986-8EC0-1CD707F41689</key>
 		<dict>
-			<key>6E4EEBD5-0AB8-4986-8EC0-1CD707F41689</key>
-			<dict>
-				<key>xpos</key>
-				<integer>200</integer>
-				<key>ypos</key>
-				<integer>90</integer>
-			</dict>
-			<key>11D5721D-E45C-4D45-82C8-2CC370002271</key>
-			<dict>
-				<key>xpos</key>
-				<integer>510</integer>
-				<key>ypos</key>
-				<integer>90</integer>
-			</dict>
+			<key>xpos</key>
+			<integer>200</integer>
+			<key>ypos</key>
+			<integer>90</integer>
 		</dict>
-		<key>variables</key>
+		<key>11D5721D-E45C-4D45-82C8-2CC370002271</key>
 		<dict>
-			<key>branch</key>
-			<string>master</string>
+			<key>xpos</key>
+			<integer>510</integer>
+			<key>ypos</key>
+			<integer>90</integer>
 		</dict>
-		<key>version</key>
-		<string>0.2.2</string>
-		<key>webaddress</key>
-		<string>https://billrclark.com</string>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>branch</key>
+		<string>master</string>
+	</dict>
+	<key>version</key>
+	<string>1.0.1</string>
+	<key>webaddress</key>
+	<string>https://billrclark.com</string>
+</dict>
 </plist>
