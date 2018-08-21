@@ -8,7 +8,7 @@ You can also open the php.net documenation in your default web browser.
 
 ![Screenshot](workflow-action.gif)
 
-Inspired by [Laravel Docs Search](https://github.com/tillkruss/alfred-laravel-docs) by Till Krüss
+Inspired by [Laravel Docs Search](https://github.com/tillkruss/alfred-laravel-docs) by Till Krüss powered by Algolia.
 
 ## Installation
 
