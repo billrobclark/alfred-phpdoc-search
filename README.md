@@ -1,4 +1,5 @@
 # PHP Documentation Search Workflow for Alfred
+http://www.packal.org/workflow/php-docs
 
 Would you like to use [Alfred](https://www.alfredapp.com/) for MacOS to quickly search the PHP documentation?
 
