@@ -1,4 +1,5 @@
 # PHP Documentation Search Workflow for Alfred
+
 http://www.packal.org/workflow/php-docs
 
 Would you like to use [Alfred](https://www.alfredapp.com/) for MacOS to quickly search the PHP documentation?
@@ -18,6 +19,12 @@ Inspired by [Laravel Docs Search](https://github.com/tillkruss/alfred-laravel-do
 3. If you want you can add the workflow to a category (not required), then click "Import" to finish importing.
 4. Now the workflow will be listed there on the left of your Alfred Workflows preferences.
 
+Note: If you'd like to change the default language for the PHP documentation you can.
+Just go to your Alfred preferences -> workflows -> PHP Docs -> then on the right you'll see some options.
+Click on the environment variables option [~] and edit the language to be the
+language desired (e.g 'en' => english, 'es' => spanish) and click save.
+Your PHP docs will now open up in the your set language.
+
 ## Usage
 
 Just type `php` with a space and whatever you're trying to search on php.net and results display instantly.
@@ -28,5 +35,6 @@ php array_unique
 ```
 
 There are two ways to see the actual php.net documentation page.
+
 1. Press `⌘Y` to quick look the result.
 2. Press `<enter>` to open the PHP documentation page in your default web browser.

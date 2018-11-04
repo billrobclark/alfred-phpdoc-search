@@ -35,25 +35,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>11D5721D-E45C-4D45-82C8-2CC370002271</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -98,25 +79,39 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>11D5721D-E45C-4D45-82C8-2CC370002271</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
-		<key>readme</key>
-		<string>A friendly-really-fast PHP.net documentation search.
+	<key>readme</key>
+	<string>A friendly-really-fast PHP.net documentation search.
 
 ## Usage
 
 php &lt;query&gt;
 php array_unique
 
-Either press `⌘Y` to Quick Look the result, or you can press enter to open it in your default web browser.</string>
+Either press `⌘Y` to Quick Look the result, or you can press enter to open it in your default web browser.
+
+If you'd like to change the default language for the PHP documentation you can. Just go to your Alfred preferences -> workflows -> PHP Docs -> then on the right you'll see some options. Click on the environment variables option and edit the language to be the language desired (e.g 'en' => english, 'es' => spanish).</string>
 	<key>uidata</key>
 	<dict>
-		<key>6E4EEBD5-0AB8-4986-8EC0-1CD707F41689</key>
-		<dict>
-			<key>xpos</key>
-			<integer>200</integer>
-			<key>ypos</key>
-			<integer>90</integer>
-		</dict>
 		<key>11D5721D-E45C-4D45-82C8-2CC370002271</key>
 		<dict>
 			<key>xpos</key>
@@ -124,11 +119,18 @@ Either press `⌘Y` to Quick Look the result, or you can press enter to open it 
 			<key>ypos</key>
 			<integer>90</integer>
 		</dict>
+		<key>6E4EEBD5-0AB8-4986-8EC0-1CD707F41689</key>
+		<dict>
+			<key>xpos</key>
+			<integer>200</integer>
+			<key>ypos</key>
+			<integer>90</integer>
+		</dict>
 	</dict>
 	<key>variables</key>
 	<dict>
-		<key>branch</key>
-		<string>master</string>
+		<key>language</key>
+		<string>en</string>
 	</dict>
 	<key>version</key>
 	<string>1.0.1</string>

@@ -18,13 +18,15 @@ $results = $search['hits'];
 foreach ($results as $hit) {
     $title = strip_tags(html_entity_decode($hit['_highlightResult']['title']['value'], ENT_QUOTES, 'UTF-8'));
 
+    $link = preg_replace('/en/', $_ENV['language'], $hit['link']);
+
     $workflow->result()
         ->uid($hit['objectID'])
         ->title($title)
         ->autocomplete($title)
         ->subtitle($hit['subtext'])
-        ->arg($hit['link'])
-        ->quicklookurl($hit['link'])
+        ->arg($link)
+        ->quicklookurl($link)
         ->valid(true);
 }
 
