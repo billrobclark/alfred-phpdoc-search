@@ -14,7 +14,7 @@ Inspired by [Laravel Docs Search](https://github.com/tillkruss/alfred-laravel-do
 
 ## Installation
 
-1. [Download the latest version](https://github.com/billrobclark/alfred-phpdoc-search/releases/download/v1.0.1/PHP.Docs.alfredworkflow)
+1. [Download the latest version](https://github.com/billrobclark/alfred-phpdoc-search/releases/download/v1.1.0/PHP.Docs.alfredworkflow)
 2. Install the workflow by double-clicking and opening the `.alfredworkflow` file that you just downloaded.
 3. If you want you can add the workflow to a category (not required), then click "Import" to finish importing.
 4. Now the workflow will be listed there on the left of your Alfred Workflows preferences.
