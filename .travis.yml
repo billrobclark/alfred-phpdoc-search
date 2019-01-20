@@ -1,2 +1,6 @@
 language: php
-install: composer install
+php:
+  - '7.1'
+  - nightly
+install:
+  - composer install

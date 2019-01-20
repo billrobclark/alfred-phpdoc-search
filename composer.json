@@ -1,4 +1,7 @@
 {
+    "name": "billrobclark/alfred-phpdoc-search",
+    "description": "Aflred workflow for quickly searching the php.net documentation.",
+    "license": "MIT",
     "require": {
         "algolia/algoliasearch-client-php": "^1.27",
         "joetannenbaum/alfred-workflow": "^0.1.1"
