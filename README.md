@@ -1,6 +1,6 @@
 # PHP Documentation Search Workflow for Alfred
 
-![Build Status](https://travis-ci.org/billrobclark/alfred-phpdoc-search.svg?branch=master)
+[![Build Status](https://travis-ci.org/billrobclark/alfred-phpdoc-search.svg?branch=master)](https://travis-ci.org/billrobclark/alfred-phpdoc-search)
 [![Latest Stable Version](https://poser.pugx.org/billrobclark/alfred-phpdoc-search/v/stable)](https://packagist.org/packages/billrobclark/alfred-phpdoc-search)
 [![License](https://poser.pugx.org/billrobclark/alfred-phpdoc-search/license)](https://packagist.org/packages/billrobclark/alfred-phpdoc-search)
 
