@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Pivot Web" default="full-build">
+ <property name="phpunit" value="/var/jenkins_home/vendor/bin/phpunit"/>
+
+ <target name="full-build"
+         depends="phpunit,-check-failure"
+         description="Run PHP Unit Tests"/>
+
+ <target name="composer" description="Install composer packages including require-dev.">
+        <get src="https://getcomposer.org/download/1.2.1/composer.phar" dest="composer.phar"/>
+        <exec executable="php" failonerror="true">
+            <arg value="${basedir}/composer.phar"/>
+            <arg value="install"/>
+            <arg value="--prefer-dist"/>
+            <arg value="--no-progress"/>
+        </exec>
+    </target>
+
+ <target name="phpunit"
+         unless="phpunit.done"
+	 depends="composer"
+         description="Run unit tests with PHPUnit">
+  <exec executable="${phpunit}" resultproperty="result.phpunit" taskname="phpunit">
+   <arg value="--configuration"/>
+   <arg path="${basedir}/phpunit.xml"/>
+  </exec>
+
+  <property name="phpunit.done" value="true"/>
+ </target>
+
+  <target name="-check-failure">
+  <fail message="PHPUnit did not finish successfully">
+   <condition>
+    <not>
+     <equals arg1="${result.phpunit}" arg2="0"/>
+    </not>
+   </condition>
+  </fail>
+ </target>
+</project>
