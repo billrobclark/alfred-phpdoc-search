@@ -58,7 +58,13 @@
 				<key>runningsubtext</key>
 				<string>Searching PHP docs for "{query}"...</string>
 				<key>script</key>
-				<string>php php-search.php "{query}"</string>
+				<string>if [ -f "/opt/homebrew/bin/php" ]; then
+    /opt/homebrew/bin/php php-search.php "{query}"
+elif [ -f "/usr/local/bin/php" ]; then
+    /usr/local/bin/php php-search.php "{query}"
+elif [ -f "/usr/bin/php" ]; then
+    /usr/bin/php php-search.php "{query}"
+fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
