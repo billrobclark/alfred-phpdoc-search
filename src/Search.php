@@ -9,9 +9,9 @@ use Algolia\AlgoliaSearch\SearchIndex;
 class Search
 {
     /**
-     * @var Workflow
+     * The Alfred PHP Workflow instance.
      */
-    private $workflow;
+    private Workflow $workflow;
 
     /**
      * The Algolia search client.
@@ -46,23 +46,23 @@ class Search
     {
         $search = $this->index->search($query);
 
-        $results = $search['hits'];
+        $results = $search['hits'] ?? [];
 
         foreach ($results as $hit) {
             $title = strip_tags(html_entity_decode($hit['_highlightResult']['title']['value'], ENT_QUOTES, 'UTF-8'));
 
             $link = preg_replace('/en/', $_ENV['language'] ?? 'en', $hit['link']);
 
-            $this->workflow->result()
+            $this->workflow->item()
                 ->uid($hit['objectID'])
                 ->title($title)
                 ->autocomplete($title)
                 ->subtitle($hit['subtext'])
                 ->arg($link)
-                ->quicklookurl($link)
+                ->quickLookUrl($link)
                 ->valid(true);
         }
 
-        return $this->workflow->output();
+        return $this->workflow->output(false);
     }
 }
