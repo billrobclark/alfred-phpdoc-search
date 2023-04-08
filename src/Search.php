@@ -4,6 +4,7 @@ namespace BillClark\PhpDocSearch;
 
 use Alfred\Workflows\Workflow;
 use Algolia\AlgoliaSearch\SearchClient;
+use Algolia\AlgoliaSearch\SearchIndex;
 
 class Search
 {
@@ -13,13 +14,17 @@ class Search
     private $workflow;
 
     /**
-     * @var Algolia
+     * The Algolia search client.
      */
-    private $algoliaClient;
+    private SearchClient $algoliaClient;
+
+    /**
+     * The Algolia search index.
+     */
+    private SearchIndex $index;
 
     /**
      * Search constructor.
-     * @throws \AlgoliaSearch\AlgoliaException
      */
     public function __construct()
     {
