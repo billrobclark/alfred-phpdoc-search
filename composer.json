@@ -3,8 +3,9 @@
     "description": "Aflred workflow for quickly searching the php.net documentation.",
     "license": "MIT",
     "require": {
-        "algolia/algoliasearch-client-php": "^1.27",
-        "joetannenbaum/alfred-workflow": "^0.1.1"
+        "php": "^7.4 | ^8.0",
+        "algolia/algoliasearch-client-php": "^3.3",
+        "joetannenbaum/alfred-workflow": "^1.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.0"
