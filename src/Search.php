@@ -34,11 +34,15 @@ class Search
     }
 
     /**
-     * @param $query
-     * @return string
-     * @throws \AlgoliaSearch\AlgoliaException
+     * Execute a search against the Algolia index.
+     *
+     * @param string $query The search query.
+     *
+     * @return string A JSON-encoded set of results.
+     *
+     * @throws \Algolia\AlgoliaSearch\Exceptions\AlgoliaException
      */
-    public function search($query)
+    public function search(string $query): string
     {
         $search = $this->index->search($query);
 
@@ -60,16 +64,5 @@ class Search
         }
 
         return $this->workflow->output();
-    }
-
-    /**
-     * @param $data
-     * @return mixed
-     */
-    public function getTitle($data)
-    {
-        $parsedData = json_decode($data);
-
-        return $parsedData->items[0]->title;
     }
 }
