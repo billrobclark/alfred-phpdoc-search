@@ -3,7 +3,7 @@
 namespace BillClark\PhpDocSearch;
 
 use Alfred\Workflows\Workflow;
-use AlgoliaSearch\Client as Algolia;
+use Algolia\AlgoliaSearch\SearchClient;
 
 class Search
 {
@@ -24,7 +24,7 @@ class Search
     public function __construct()
     {
         $this->workflow = new Workflow();
-        $this->algoliaClient = new Algolia('A6XQ78SBYL', '6b55caa922558f0094b3aba94b293d0c');
+        $this->algoliaClient = SearchClient::create('A6XQ78SBYL', '6b55caa922558f0094b3aba94b293d0c');
         $this->index = $this->algoliaClient->initIndex('php-docs');
     }
 
